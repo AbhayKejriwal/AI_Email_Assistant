@@ -102,10 +102,18 @@ if __name__ == '__main__':
     print("No emails found.")
   else:
     for email in emails:
-      print(email['Subject'], email['From'], email['Message'])
-      # Store the email in a text file
-      with open('email.txt', 'w') as file:
+      # print(email)
+      # print(email['Subject'], email['From'], email['Message'])
+      # Save the email message as an html file
+      with open(str(email['MessageID'])+'.html', 'w', encoding='utf-8') as file:
+        file.write(email['Message'])
+        print("Email saved as " + str(email['MessageID']) + ".html")
+      # save the rest of the email data in a text file
+      with open(str(email['MessageID'])+'.txt', 'w', encoding='utf-8') as file:
+        # save the dictionary in the text file but remove the message key
+        email.pop('Message')
         file.write(str(email))
+        print("Email data saved in " + str(email['MessageID']) + ".txt")
 
 def fetchAllEmails():
   emails = getEmails()
