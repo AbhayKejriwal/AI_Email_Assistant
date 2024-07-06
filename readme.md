@@ -38,8 +38,8 @@ The system consists of several Python scripts, each handling specific functional
 git clone https://github.com/AbhayKejriwal/AI_Email_Assistant
 ```
 ```
-    cd AI_Email_Assistant
-    pip install -r requirements.txt
+cd AI_Email_Assistant
+pip install -r requirements.txt
 ```
 
 2. Set up Google Cloud Project and Gmail API:
@@ -49,8 +49,14 @@ git clone https://github.com/AbhayKejriwal/AI_Email_Assistant
 - Place `credentials.json` in the project directory
 
 3. Run the main script:
-    python Main.py
+```
+python Main.py
+```
 
 4. The system will process your unread emails and generate an Excel file with summaries and categories. You can review this file to quickly assess your inbox.
 
 ## Features to add
+- Intuitive GUI
+- Ads and junk filtering in email
+- Multiple user accounts
+- Other email clients 
