@@ -4,7 +4,7 @@
 
 The AI Email Assistant aims to simplify email management for Gmail users by automating the process of email categorization and summarization. It's designed for individuals overwhelmed by their inbox, helping them quickly prioritize and process their emails.
 
-## Project Intent
+### Project Intent
 As a college student or any knowledge professional, we tend to receive a lot of mails daily, most of which might not be relevant for the individual. This can cause a lot of inbox clutter if the mails are not managed on a daily basis, which can take a lot of time. This assistant aims to solve the issue of inbox clutter by leveraging the power of generative AI and utilizing techniques like RAG to make the agent adaptable to any individuals' needs by simply stating their preferences.
 
 ## What It Does
