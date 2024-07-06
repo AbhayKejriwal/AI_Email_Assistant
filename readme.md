@@ -34,9 +34,13 @@ The system consists of several Python scripts, each handling specific functional
 ## How to Use It
 
 1. Clone the repository and install dependencies:
-    git clone https://github.com/AbhayKejriwal/AI_Email_Assistant
+```
+git clone https://github.com/AbhayKejriwal/AI_Email_Assistant
+```
+```
     cd AI_Email_Assistant
     pip install -r requirements.txt
+```
 
 2. Set up Google Cloud Project and Gmail API:
 - Create a project in Google Cloud Console
