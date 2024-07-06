@@ -1,6 +1,5 @@
 import pandas as pd
 from datetime import datetime
-import openpyxl
 
 def read_from_excel(file_name):
     # Read Excel file into DataFrame

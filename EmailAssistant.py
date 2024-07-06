@@ -1,6 +1,5 @@
-import base64
 import vertexai
-from vertexai.generative_models import GenerativeModel, Part, FinishReason
+from vertexai.generative_models import GenerativeModel
 import vertexai.preview.generative_models as generative_models
 
 def generate(text1):
