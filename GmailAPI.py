@@ -45,7 +45,7 @@ def getEmail(service, message):
       sender = header['value']
   text = ""
 
-  parts = payload.get('parts')
+  parts = payload.get('parts')[1:]
   for part in parts:
     data = part['body'].get('data', '')  # Safely retrieve the value of 'data' key with a default value of an empty string
     byte_code = base64.urlsafe_b64decode(data)
