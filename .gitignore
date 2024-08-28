@@ -2,3 +2,4 @@
 *.json
 /__test__
 /__pycache__
+.env
