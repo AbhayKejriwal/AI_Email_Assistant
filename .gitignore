@@ -1,5 +1,8 @@
 
-*.json
 /__test__
 /__pycache__
 .env
+*.json
+*.html
+*.txt
+*.xlsx
