@@ -32,7 +32,7 @@ def generate(message):
   return response.text
 
 def main():
-  with open(".html", "r", encoding="utf-8") as f:
+  with open("1917a9d2c104454d.html", "r", encoding="utf-8") as f:
     message = f.read()
   summary = generate(message)
   with open("summary.txt", "w", encoding="utf-8") as f:
