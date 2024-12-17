@@ -80,6 +80,18 @@ def getEmails(labels=[], state=None):
 
   return emails
 
+def getLabels(service):
+  results = service.users().labels().list(userId="me").execute()
+  labels = results.get("labels", [])
+
+  if not labels:
+    print("No labels found.")
+    return
+  print("Labels:")
+  for label in labels:
+    print(label["name"])
+  return labels
+
 def removeLabels(email, labels):
   creds = getCredentials()
   service = build('gmail', 'v1', credentials=creds)
